@@ -39,15 +39,27 @@ body {
   .hero-title {
     font-size: clamp(72px, 22vw, 110px) !important;
     margin-right: -36vw;
+    position: relative;
+    z-index: 2;
   }
   .hero-logo {
     position: absolute;
-    right: -3vw;
+    right: 0;
     top: 0;
-    width: 50vw;
+    width: 48vw;
+    z-index: 1;
+    opacity: 0.9;
   }
-  .hero-body { margin-top: 16px; }
-  .hero-cta  { margin-top: 28px; }
+  .hero-body {
+    margin-top: 16px;
+    position: relative;
+    z-index: 2;
+  }
+  .hero-cta {
+    margin-top: 28px;
+    position: relative;
+    z-index: 2;
+  }
 }
 
 .grain-heading {
