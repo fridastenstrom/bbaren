@@ -32,11 +32,22 @@ body {
 
 @media (max-width: 640px) {
   .hero-inner {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "title title" "body logo" "cta logo";
-    column-gap: 12px;
+    display: block;
+    position: relative;
+    padding-right: 36vw;
   }
-  .hero-logo { align-self: flex-end; padding-bottom: 8px; }
+  .hero-title {
+    font-size: clamp(72px, 22vw, 110px) !important;
+    margin-right: -36vw;
+  }
+  .hero-logo {
+    position: absolute;
+    right: -3vw;
+    top: 0;
+    width: 50vw;
+  }
+  .hero-body { margin-top: 16px; }
+  .hero-cta  { margin-top: 28px; }
 }
 
 .grain-heading {
