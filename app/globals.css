@@ -26,7 +26,7 @@ body {
   max-width: 1200px;
 }
 .hero-title { grid-area: title; }
-.hero-body  { grid-area: body; margin-top: 28px; font-size: 15px; line-height: 1.75; color: var(--cream); max-width: 380px; }
+.hero-body  { grid-area: body; margin-top: 28px; font-size: 15px; line-height: 1.75; color: rgba(232,224,212,0.7); max-width: 380px; }
 .hero-cta   { grid-area: cta; margin-top: 36px; }
 .hero-logo  { grid-area: logo; align-self: center; }
 
@@ -45,7 +45,7 @@ body {
   .hero-logo {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 40px;
     width: 48vw;
     z-index: 1;
     opacity: 0.9;

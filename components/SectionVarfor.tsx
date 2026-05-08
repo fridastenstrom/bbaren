@@ -28,7 +28,7 @@ export default function SectionVarfor() {
         {([
           <p key="1">&quot;Vad är B-baren? Jo, jag älskar ett bra koncept, och länge snurrade en fråga i huvudet: vad ska man ha för tema på sin 40-årsfest?</p>,
           <p key="2">Och så slog det mig – att väldigt många fina saker i livet faktiskt börjar på bokstaven B.</p>,
-          <p key="3">Bara för att nämna några... <B>bärs</B>, <B>brudar</B>, <B>band</B>, <B>bordtennis</B>, <B>bingo</B>, <B>banankaka</B>, <B>blindtest</B>, <B>Berit</B> och <B>Bengt</B>.</p>,
+          <p key="3">Bara för att nämna några... <B>bärs</B>, <B>brudar</B>, <B>band</B>, <B>bordtennis</B>, <B>bingo</B>, <B>banankaka</B>, <B>blindtest</B>.</p>,
           <p key="4">Jag tänkte, det här borde jag göra något av...</p>,
           <p key="5">Något som inte så många vet är att jag haft en liten dröm om att starta en bar. En skön plats att vara på, men också där det händer lite oväntade saker. Där det finns både <B>bärs</B> och <B>bubbel</B>, kanske ett <B>band</B> i ett hörn, någon som spelar <B>brädspel</B> i ett annat, och där kvällen kan ta lite vilken riktning som helst.</p>,
           <p key="6">Så… varför inte testa det nu? För en kväll. På min 40-årsdag.</p>,
