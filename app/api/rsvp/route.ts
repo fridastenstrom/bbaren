@@ -10,7 +10,7 @@ export async function POST(req: NextRequest) {
 
   const { error } = await supabase
     .from('rsvps')
-    .insert({ name: name.trim(), attending, comment: comment?.trim() || null })
+    .insert({ name: name.trim(), answer: attending, comment: comment?.trim() || null })
 
   if (error) {
     console.error('Supabase insert error:', error)

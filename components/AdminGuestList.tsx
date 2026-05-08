@@ -1,18 +1,18 @@
 type Rsvp = {
   id: string
   name: string
-  attending: 'ja' | 'nej' | 'kanske'
+  answer: 'ja' | 'nej' | 'kanske'
   comment: string | null
   created_at: string
 }
 
-const attendingColor: Record<string, string> = { ja: '#6fcf97', nej: '#eb5757', kanske: '#f2994a' }
+const answerColor: Record<string, string> = { ja: '#6fcf97', nej: '#eb5757', kanske: '#f2994a' }
 
 export default function AdminGuestList({ guests }: { guests: Rsvp[] }) {
   const counts = {
-    ja: guests.filter(g => g.attending === 'ja').length,
-    nej: guests.filter(g => g.attending === 'nej').length,
-    kanske: guests.filter(g => g.attending === 'kanske').length,
+    ja: guests.filter(g => g.answer === 'ja').length,
+    nej: guests.filter(g => g.answer === 'nej').length,
+    kanske: guests.filter(g => g.answer === 'kanske').length,
   }
 
   return (
@@ -36,7 +36,7 @@ export default function AdminGuestList({ guests }: { guests: Rsvp[] }) {
           {guests.map(g => (
             <tr key={g.id} style={{ borderBottom: '1px solid var(--line)' }}>
               <td style={{ padding: '14px 0', paddingRight: '24px', color: 'var(--cream)' }}>{g.name}</td>
-              <td style={{ padding: '14px 0', paddingRight: '24px', color: attendingColor[g.attending], textTransform: 'uppercase' }}>{g.attending}</td>
+              <td style={{ padding: '14px 0', paddingRight: '24px', color: answerColor[g.answer], textTransform: 'uppercase' }}>{g.answer}</td>
               <td style={{ padding: '14px 0', paddingRight: '24px', color: 'var(--dim)' }}>{g.comment || '—'}</td>
               <td style={{ padding: '14px 0', color: 'var(--dim)' }}>{new Date(g.created_at).toLocaleDateString('sv-SE')}</td>
             </tr>
