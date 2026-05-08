@@ -42,7 +42,7 @@ export default function SectionOsa() {
     color: selected ? 'transparent' : 'var(--cream)',
     cursor: 'pointer', whiteSpace: 'nowrap',
     position: 'relative',
-    fontFamily: "'Space Mono', monospace",
+    fontFamily: "var(--font-mono), monospace",
     background: 'transparent',
   })
 
@@ -66,7 +66,7 @@ export default function SectionOsa() {
             style={{
               width: '100%', background: 'transparent',
               color: 'var(--cream)',
-              fontFamily: "'Space Mono', monospace", fontSize: '15px',
+              fontFamily: "var(--font-mono), monospace", fontSize: '15px',
               padding: '14px 0', outline: 'none',
               border: 'none', borderBottom: '1px solid rgba(232,224,212,0.4)',
             }}
@@ -111,7 +111,7 @@ export default function SectionOsa() {
             style={{
               width: '100%', background: 'transparent',
               color: 'var(--cream)',
-              fontFamily: "'Space Mono', monospace", fontSize: '14px',
+              fontFamily: "var(--font-mono), monospace", fontSize: '14px',
               padding: '12px', resize: 'vertical',
               border: '1px solid rgba(232,224,212,0.2)', outline: 'none',
             }}
@@ -129,7 +129,7 @@ export default function SectionOsa() {
             display: 'inline-flex', alignItems: 'center', gap: '16px',
             padding: '16px 40px', alignSelf: 'flex-start',
             border: '1.5px solid var(--cream)',
-            fontFamily: "'Space Mono', monospace",
+            fontFamily: "var(--font-mono), monospace",
             fontSize: '13px', letterSpacing: '0.16em', textTransform: 'uppercase',
             color: 'var(--cream)', background: 'transparent', cursor: 'pointer',
           }}

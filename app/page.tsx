@@ -25,7 +25,7 @@ export default function Home() {
             fontSize: '11px',
             color: 'rgba(232,224,212,0.15)',
             textDecoration: 'none',
-            fontFamily: "'Space Mono', monospace",
+            fontFamily: "var(--font-mono), monospace",
             letterSpacing: '0.06em',
           }}
         >

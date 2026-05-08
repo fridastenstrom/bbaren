@@ -23,7 +23,7 @@ export default function SectionVarNar() {
       </span>
 
       <p style={{
-        fontFamily: "'Big Shoulders Display', sans-serif",
+        fontFamily: "var(--font-heading), sans-serif",
         fontWeight: 900,
         fontSize: '28px',
         letterSpacing: '0.08em',
@@ -67,7 +67,7 @@ export default function SectionVarNar() {
           background: 'transparent',
           border: '1px solid var(--line)',
           color: 'var(--dim)',
-          fontFamily: "'Space Mono', monospace",
+          fontFamily: "var(--font-mono), monospace",
           fontSize: '12px', letterSpacing: '0.14em',
           textTransform: 'uppercase' as const,
           padding: '12px 20px', cursor: 'pointer',

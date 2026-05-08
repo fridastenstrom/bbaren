@@ -17,13 +17,13 @@ export default function AdminGuestList({ guests }: { guests: Rsvp[] }) {
 
   return (
     <div style={{ minHeight: '100vh', background: 'var(--black)', padding: '60px 5vw' }}>
-      <h1 style={{ fontFamily: "'Big Shoulders Display', sans-serif", fontWeight: 900, fontSize: '60px', color: 'var(--cream)', marginBottom: '8px' }}>
+      <h1 style={{ fontFamily: "var(--font-heading), sans-serif", fontWeight: 900, fontSize: '60px', color: 'var(--cream)', marginBottom: '8px' }}>
         Gästlista
       </h1>
-      <p style={{ fontFamily: "'Space Mono', monospace", fontSize: '13px', color: 'var(--dim)', marginBottom: '40px' }}>
+      <p style={{ fontFamily: "var(--font-mono), monospace", fontSize: '13px', color: 'var(--dim)', marginBottom: '40px' }}>
         {guests.length} svar — JA: {counts.ja} · NEJ: {counts.nej} · KANSKE: {counts.kanske}
       </p>
-      <table style={{ width: '100%', borderCollapse: 'collapse', fontFamily: "'Space Mono', monospace", fontSize: '13px' }}>
+      <table style={{ width: '100%', borderCollapse: 'collapse', fontFamily: "var(--font-mono), monospace", fontSize: '13px' }}>
         <thead>
           <tr style={{ borderBottom: '1px solid var(--line)', color: 'var(--dim)', textAlign: 'left' }}>
             <th style={{ padding: '10px 0', paddingRight: '24px' }}>NAMN</th>

@@ -31,7 +31,7 @@ export default function AdminLogin() {
           placeholder="Lösenord"
           style={{
             background: 'transparent', color: 'var(--cream)',
-            fontFamily: "'Space Mono', monospace", fontSize: '14px',
+            fontFamily: "var(--font-mono), monospace", fontSize: '14px',
             padding: '12px', border: '1px solid var(--line)', outline: 'none',
           }}
         />
@@ -39,7 +39,7 @@ export default function AdminLogin() {
         <button type="submit" style={{
           padding: '12px', border: '1px solid var(--cream)',
           background: 'transparent', color: 'var(--cream)',
-          fontFamily: "'Space Mono', monospace", fontSize: '12px',
+          fontFamily: "var(--font-mono), monospace", fontSize: '12px',
           letterSpacing: '0.1em', textTransform: 'uppercase', cursor: 'pointer',
         }}>
           Logga in

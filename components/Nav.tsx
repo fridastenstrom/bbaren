@@ -15,7 +15,7 @@ export default function Nav() {
           key={href}
           href={href}
           style={{
-            fontFamily: "'Space Mono', monospace",
+            fontFamily: "var(--font-mono), monospace",
             fontSize: '16px',
             letterSpacing: '0.14em',
             color: 'var(--cream)',

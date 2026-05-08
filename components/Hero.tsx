@@ -41,7 +41,7 @@ export default function Hero() {
               display: 'inline-flex', alignItems: 'center', gap: '16px',
               marginTop: '36px', padding: '16px 36px',
               border: '1.5px solid var(--cream)',
-              fontFamily: "'Space Mono', monospace",
+              fontFamily: "var(--font-mono), monospace",
               fontSize: '14px', letterSpacing: '0.18em',
               textTransform: 'uppercase' as const,
               color: 'var(--cream)', textDecoration: 'none',
@@ -82,7 +82,7 @@ export default function Hero() {
             href={href}
             style={{
               textDecoration: 'none', color: 'var(--cream)',
-              fontFamily: "'Space Mono', monospace",
+              fontFamily: "var(--font-mono), monospace",
               fontSize: '13px', letterSpacing: '0.15em',
               textTransform: 'uppercase' as const,
               padding: '20px 0',
