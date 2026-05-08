@@ -15,6 +15,30 @@ body {
   font-family: var(--font-mono), monospace;
 }
 
+/* Hero grid layout */
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr clamp(260px, 38vw, 480px);
+  grid-template-areas: "title logo" "body logo" "cta logo";
+  align-items: start;
+  column-gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+.hero-title { grid-area: title; }
+.hero-body  { grid-area: body; margin-top: 28px; font-size: 15px; line-height: 1.75; color: var(--cream); max-width: 380px; }
+.hero-cta   { grid-area: cta; margin-top: 36px; }
+.hero-logo  { grid-area: logo; align-self: center; }
+
+@media (max-width: 640px) {
+  .hero-inner {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title title" "body logo" "cta logo";
+    column-gap: 12px;
+  }
+  .hero-logo { align-self: flex-end; padding-bottom: 8px; }
+}
+
 .grain-heading {
   font-family: var(--font-heading), sans-serif;
   font-weight: 900;

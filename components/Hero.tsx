@@ -11,54 +11,42 @@ export default function Hero() {
       position: 'relative',
       overflow: 'hidden',
     }}>
-      <div style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        width: '100%',
-        maxWidth: '1200px',
-      }}>
-        <div style={{ flex: 1 }}>
-          <span
-            className="grain-heading"
-            style={{
-              fontSize: 'clamp(120px, 20vw, 260px)',
-              lineHeight: 0.88,
-              letterSpacing: '-0.01em',
-            }}
-          >
-            FRIDAS
-          </span>
-          <p style={{
-            fontSize: '15px', lineHeight: 1.75,
-            color: 'var(--dim)', marginTop: '28px', maxWidth: '380px',
-          }}>
-            Frida Stenström fyller 40 år och bjuder in dig till fest lördagen den 26 september i Stockholm. Läs mer nedan.
-          </p>
-          <a
-            href="#osa"
-            style={{
-              display: 'inline-flex', alignItems: 'center', gap: '16px',
-              marginTop: '36px', padding: '16px 36px',
-              border: '1.5px solid var(--cream)',
-              fontFamily: "var(--font-mono), monospace",
-              fontSize: '14px', letterSpacing: '0.18em',
-              textTransform: 'uppercase' as const,
-              color: 'var(--cream)', textDecoration: 'none',
-            }}
-          >
-            OSA HÄR &nbsp;→
-          </a>
-        </div>
+      <div className="hero-inner">
+        <span
+          className="grain-heading hero-title"
+          style={{
+            fontSize: 'clamp(90px, 20vw, 260px)',
+            lineHeight: 0.88,
+            letterSpacing: '-0.01em',
+          }}
+        >
+          FRIDAS
+        </span>
 
-        <div style={{
-          flexShrink: 0,
-          width: 'clamp(280px, 38vw, 500px)',
-          marginLeft: '20px',
-        }}>
+        <p className="hero-body">
+          Frida Stenström fyller 40 år och bjuder in dig till fest lördagen den 26 september i Stockholm. Läs mer nedan.
+        </p>
+
+        <a
+          href="#osa"
+          className="hero-cta"
+          style={{
+            display: 'inline-flex', alignItems: 'center', gap: '16px',
+            padding: '16px 36px',
+            border: '1.5px solid var(--cream)',
+            fontFamily: "var(--font-mono), monospace",
+            fontSize: '14px', letterSpacing: '0.18em',
+            textTransform: 'uppercase' as const,
+            color: 'var(--cream)', textDecoration: 'none',
+          }}
+        >
+          OSA HÄR &nbsp;→
+        </a>
+
+        <div className="hero-logo">
           <Image
-            src="/bbaren-logo.png"
-            alt="B-Baren"
+            src="/bbar-logo.png"
+            alt="B-Bar"
             width={500}
             height={650}
             style={{ width: '100%', height: 'auto', display: 'block' }}
