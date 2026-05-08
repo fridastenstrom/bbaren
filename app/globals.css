@@ -35,6 +35,7 @@ body {
     display: block;
     position: relative;
     padding-right: 36vw;
+    overflow-x: clip;
   }
   .hero-title {
     font-size: clamp(72px, 22vw, 110px) !important;
@@ -44,7 +45,7 @@ body {
   }
   .hero-logo {
     position: absolute;
-    right: 0;
+    right: -8vw;
     top: 40px;
     width: 48vw;
     z-index: 1;

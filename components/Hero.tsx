@@ -9,7 +9,6 @@ export default function Hero() {
       flexDirection: 'column',
       justifyContent: 'center',
       position: 'relative',
-      overflowX: 'clip',
     }}>
       <div className="hero-inner">
         <span
