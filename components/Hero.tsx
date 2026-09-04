@@ -26,22 +26,6 @@ export default function Hero() {
           Frida Stenström fyller 40 år och bjuder in dig till fest lördagen den 26 september i Stockholm. Läs mer nedan.
         </p>
 
-        <a
-          href="#osa"
-          className="hero-cta"
-          style={{
-            display: 'inline-flex', alignItems: 'center', gap: '16px',
-            padding: '16px 36px',
-            border: '1.5px solid var(--cream)',
-            fontFamily: "var(--font-mono), monospace",
-            fontSize: '14px', letterSpacing: '0.18em',
-            textTransform: 'uppercase' as const,
-            color: 'var(--cream)', textDecoration: 'none',
-          }}
-        >
-          OSA HÄR &nbsp;→
-        </a>
-
         <div className="hero-logo">
           <Image
             src="/bbar-logo.png"
